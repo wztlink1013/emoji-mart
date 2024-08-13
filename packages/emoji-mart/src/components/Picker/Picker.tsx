@@ -54,7 +54,7 @@ export default class Picker extends Component {
       this.props.searchPosition == 'sticky'
     ) {
       console.warn(
-        '[EmojiMart] Deprecation warning: `stickySearch` has been renamed `searchPosition`.',
+        '[LyricsEmoji] Deprecation warning: `stickySearch` has been renamed `searchPosition`.',
       )
 
       this.props.searchPosition = 'static'

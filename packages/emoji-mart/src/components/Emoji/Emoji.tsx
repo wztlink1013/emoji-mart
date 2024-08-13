@@ -51,7 +51,7 @@ export default function Emoji(props) {
           style={{
             fontSize: props.size,
             fontFamily:
-              '"EmojiMart", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji"',
+              '"LyricsEmoji", "Segoe UI Emoji", "Segoe UI Symbol", "Segoe UI", "Apple Color Emoji", "Twemoji Mozilla", "Noto Color Emoji", "Android Emoji"',
           }}
         >
           {emojiSkin.native}

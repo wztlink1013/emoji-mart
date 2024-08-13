@@ -1,7 +1,7 @@
 <div align="center">
   <br><b>Emoji Mart</b> is a customizable<br>emoji picker HTML component for the web
   <br><a href="https://missiveapp.com/open/emoji-mart">Demo</a>
-  <br><br><a href="https://missiveapp.com/open/emoji-mart"><img width="639" alt="EmojiMart" src="https://user-images.githubusercontent.com/436043/163686169-766ef715-89b5-4ada-88d7-672623713bc0.png"></a>
+  <br><br><a href="https://missiveapp.com/open/emoji-mart"><img width="639" alt="LyricsEmoji" src="https://user-images.githubusercontent.com/436043/163686169-766ef715-89b5-4ada-88d7-672623713bc0.png"></a>
   <br><br><a title="Team email, team chat, team tasks, one app" href="https://missiveapp.com"><img width="34" alt="Missive | Team email, team chat, team tasks, one app" src="https://user-images.githubusercontent.com/436043/163655413-df22f8cc-99a7-4d8d-a5c1-105c435910d7.png"></a>
   <br>Brought to you by the <a title="Team email, team chat, team tasks, one app" href="https://missiveapp.com">Missive</a> team
 </div>
@@ -77,7 +77,7 @@ function App() {
 <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
 <script>
   const pickerOptions = { onEmojiSelect: console.log }
-  const picker = new EmojiMart.Picker(pickerOptions)
+  const picker = new LyricsEmoji.Picker(pickerOptions)
 
   document.body.appendChild(picker)
 </script>
@@ -95,7 +95,7 @@ function App() {
 | **onAddCustomEmoji** | `null` | | Callback when the *Add custom emoji* button is clicked. The button will only be displayed if this callback is provided. It is displayed when search returns no results. |
 | **autoFocus** | `false` | | Whether the picker should automatically focus on the search input |
 | **categoryIcons** | `{}` | | [Custom category icons](#custom-category-icons) |
-| **dynamicWidth** | `false` | | Whether the picker should calculate `perLine` dynamically based on the width of `<em-emoji-picker>`. When enabled, `perLine` is ignored |
+| **dynamicWidth** | `false` | | Whether the picker should calculate `perLine` dynamically based on the width of `<lyrics-emoji-picker>`. When enabled, `perLine` is ignored |
 | **emojiButtonColors** | `[]` | i.e. `#f00`, `pink`, `rgba(155,223,88,.7)` | An array of color that affects the hover background color |
 | **emojiButtonRadius** | `100%` | i.e. `6px`, `1em`, `100%` | The radius of the emoji buttons |
 | **emojiButtonSize** | `36` | | The size of the emoji buttons |
@@ -199,10 +199,10 @@ init({ data })
 Then you can use the emoji component in your HTML / JSX.
 
 ```html
-<em-emoji id="+1" size="2em"></em-emoji>
-<em-emoji id="+1" skin="2"></em-emoji>
-<em-emoji shortcodes=":+1::skin-tone-1:"></em-emoji>
-<em-emoji shortcodes=":+1::skin-tone-2:"></em-emoji>
+<lyrics-emoji id="+1" size="2em"></lyrics-emoji>
+<lyrics-emoji id="+1" skin="2"></lyrics-emoji>
+<lyrics-emoji shortcodes=":+1::skin-tone-1:"></lyrics-emoji>
+<lyrics-emoji shortcodes=":+1::skin-tone-2:"></lyrics-emoji>
 ```
 
 ### Attributes / Props
@@ -260,7 +260,7 @@ getEmojiDataFromNative('🤞🏿').then(console.log)
 ```
 
 ## 🗺 Internationalization
-EmojiMart UI supports [multiple languages](https://github.com/missive/emoji-mart/tree/main/packages/emoji-mart-data/i18n), feel free to open a PR if yours is missing.
+LyricsEmoji UI supports [multiple languages](https://github.com/missive/emoji-mart/tree/main/packages/emoji-mart-data/i18n), feel free to open a PR if yours is missing.
 
 ```js
 import i18n from '@emoji-mart/data/i18n/fr.json'
@@ -281,7 +281,7 @@ Given the small file size, English is built-in and doesn’t need to be provided
 - [Slack colors](https://missiveapp.com/open/emoji-mart/example-slack-colors.html)
 
 ## 🤓 Built for modern browsers
-EmojiMart relies on these APIs, you may need to include polyfills if you need to support older browsers:
+LyricsEmoji relies on these APIs, you may need to include polyfills if you need to support older browsers:
 - [Shadow DOM](https://caniuse.com/shadowdomv1) ([MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM))
 - [Custom elements](https://caniuse.com/custom-elementsv1) ([MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements))
 - [IntersectionObserver](https://caniuse.com/intersectionobserver) ([MDN](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API))

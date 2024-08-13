@@ -29,7 +29,7 @@ export default class PickerElement extends ShadowElement {
 
 if (
   typeof customElements !== 'undefined' &&
-  !customElements.get('em-emoji-picker')
+  !customElements.get('lyrics-emoji-picker')
 ) {
-  customElements.define('em-emoji-picker', PickerElement)
+  customElements.define('lyrics-emoji-picker', PickerElement)
 }
